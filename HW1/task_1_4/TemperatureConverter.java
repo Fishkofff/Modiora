@@ -21,4 +21,5 @@ public class TemperatureConverter {
         System.out.println("Выше точки кипения? " + isAboveBoiling);
         System.out.println("В Фаренгейтах: " + celsiusToFahrenheit(currentTemperature));
     }
+
 }
