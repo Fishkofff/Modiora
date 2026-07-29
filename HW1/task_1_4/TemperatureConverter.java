@@ -1,5 +1,7 @@
 package task_1_4;
 
+import java.util.Random;
+
 public class TemperatureConverter {
 
     public static final double ABSOLUTE_ZERO_CELSIUS = -273.15;
@@ -14,12 +16,18 @@ public class TemperatureConverter {
     }
 
     public static void main(String[] args) {
-        double currentTemperature = 101;
-        boolean isAboveBoiling = currentTemperature > BOILING_POINT_CELSIUS;
+        Random random = new Random();
+        double temperatureCelsius = 1 + random.nextInt(250);
 
-        System.out.println("Температура: " + currentTemperature + " C");
-        System.out.println("Выше точки кипения? " + isAboveBoiling);
-        System.out.println("В Фаренгейтах: " + celsiusToFahrenheit(currentTemperature));
+        boolean isAboveBoiling = temperatureCelsius > BOILING_POINT_CELSIUS;
+
+        System.out.println("Самая низкая температура во Вселенной: " + ABSOLUTE_ZERO_CELSIUS + " °C");
+        System.out.println("Текущая температура: " + temperatureCelsius + " °C");
+        System.out.println("Выше точки кипения воды? " + isAboveBoiling);
+
+        double temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
+        System.out.println("Она же в Фаренгейтах: " + temperatureFahrenheit + " °F");
+
+        System.out.println("Проверка (перевод обратно в Цельсии): " + fahrenheitToCelsius(temperatureFahrenheit) + " °C");
     }
-
 }
