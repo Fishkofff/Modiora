@@ -26,7 +26,7 @@ public class TemperatureConverter {
         System.out.println("Выше точки кипения воды? " + isAboveBoiling);
 
         double temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
-        System.out.println("Она же в Фаренгейтах: " + temperatureFahrenheit + " °F");
+        System.out.println("Температура в Фаренгейтах: " + temperatureFahrenheit + " °F");
 
         System.out.println("Проверка (перевод обратно в Цельсии): " + fahrenheitToCelsius(temperatureFahrenheit) + " °C");
     }
