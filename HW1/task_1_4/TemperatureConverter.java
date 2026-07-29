@@ -28,6 +28,6 @@ public class TemperatureConverter {
         double temperatureFahrenheit = celsiusToFahrenheit(temperatureCelsius);
         System.out.println("Температура в Фаренгейтах: " + temperatureFahrenheit + " °F");
 
-        System.out.println("Проверка (перевод обратно в Цельсии): " + fahrenheitToCelsius(temperatureFahrenheit) + " °C");
+        System.out.println("Перевод обратно в Цельсии: " + fahrenheitToCelsius(temperatureFahrenheit) + " °C");
     }
 }
